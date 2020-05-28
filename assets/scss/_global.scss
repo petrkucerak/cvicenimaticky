@@ -1,0 +1,46 @@
+// = global styles =
+// ===============================================
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+body{
+
+    font-family: 'Oxanium', cursive;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    width: 100%;
+
+    @include flexbox{
+
+        flex-direction: column;
+    };
+}
+.generator{
+
+    width: 100%;
+
+    @include flexbox{
+
+        flex-direction: column;
+    };
+
+    &__gen{
+
+        @include flexbox{
+
+            flex-direction: column;
+
+        };
+
+        &__prv{
+
+            @include flexbox{
+
+                flex-direction: row;
+
+            };
+
+
+        }
+    }
+}
